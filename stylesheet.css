@@ -223,7 +223,7 @@ header {
   &:hover .toggle{
     grid-template-rows: 1fr;
   }
-  .btn.tapped .toggle {
+  &:tapped .toggle {
     grid-template-rows: 1fr;
 }
 
