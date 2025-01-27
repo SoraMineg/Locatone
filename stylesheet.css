@@ -201,7 +201,7 @@ header {
   bottom: 25%;
 }
 
-.lesson-icon p {
+.lesson-icon p{
   text-shadow: 
     2px 2px 4px rgba(0, 0, 0, 0.7),   /* 右下に黒い影 */
     -2px -2px 4px rgba(0, 0, 0, 0.7), /* 左上に黒い影 */
@@ -214,13 +214,35 @@ header {
   color: white;
 
 }
+.parent{
+  border: 1px solid #000;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  &:hover .toggle{
+    grid-template-rows: 1fr;
+  }
+  h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .toggle{
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows .4s ease;
+
+    div{
+      overflow: hidden;
+    }
+  }
+}
+
 
 .text-contents {
   width: 80%;
   display: inline-block;
   margin-top: 15px;
   font-size: 13px;
-  color: #b3aeb5;
+  color: black;
 }
 
 .heading h3 {
