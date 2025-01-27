@@ -216,11 +216,18 @@ header {
 }
 .parent{
   border: 1px solid #000;
+  background-color: rgba(255, 255, 255, 0.6);
+
   padding: 1rem 1.5rem;
   border-radius: 1rem;
   &:hover .toggle{
     grid-template-rows: 1fr;
   }
+  .btn.tapped .toggle {
+    grid-template-rows: 1fr;
+}
+
+  
   h2{
     font-size: 1.5rem;
     font-weight: 600;
