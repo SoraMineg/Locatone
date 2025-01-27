@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>秘密の部屋</title>
+    </head>
+    <body>
+        
+        <header>
+            <p class="p" align="center">なぞとき</p>
+        </header>
+        <h2 class="main" align="center">おつかれさまです</h2>
+        
+        <script type="text/javascript">
+            function first(){
+                var user = prompt("　▷ 君の名前を入力して");
+                if(user==false || user==null){
+                    alert("　▷ アクセス失敗した！もう一度君の名前を入力して");
+                    first();
+                }else{
+                    document.title=user;
+                }
+                var pass=prompt("　▷ ようこそ！ "+user+"さん、ストーリーで手に入れたパスワードを入力して");
+                var passWord="音の世界"
+                if(pass == passWord){
+                    alert("正解だ。おめでとう");
+    
+                }else{
+                    alert("Your password is incorrect");
+                    first();
+                }
+            }
+            window.onload=first();
+        </script>
+        
+    </body>
+</html>
