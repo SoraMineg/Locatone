@@ -226,6 +226,9 @@ header {
   .btn:active .toggle {
     grid-template-rows: 1fr;
   }
+  &:active .toggle {
+    grid-template-rows: 1fr;
+  }
 
 
   
