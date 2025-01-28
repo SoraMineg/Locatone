@@ -1,0 +1,358 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(images/samune.png);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.7),   /* 右下に黒い影 */
+        -2px -2px 4px rgba(0, 0, 0, 0.7), /* 左上に黒い影 */
+        2px -2px 4px rgba(0, 0, 0, 0.7),  /* 右上に黒い影 */
+        -2px 2px 4px rgba(0, 0, 0, 0.7);  /* 左下に黒い影 */
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+.top-wrapper .catch {
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.7),   /* 右下に黒い影 */
+    -2px -2px 4px rgba(0, 0, 0, 0.7), /* 左上に黒い影 */
+    2px -2px 4px rgba(0, 0, 0, 0.7),  /* 右上に黒い影 */
+    -2px 2px 4px rgba(0, 0, 0, 0.7);  /* 左下に黒い影 */
+  opacity: 0.7;
+  color:pink;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.signup {
+  background-color: white;
+}
+
+.facebook {
+  background-color: #55acee;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: black;
+}
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.7;
+  border-radius: 4px;
+  text-align: center;
+}
+.btn.signup{
+  color:black;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+.password-popup a{
+  background-color:gray;
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.7;
+  border-radius: 4px;
+  text-align: center;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(129, 96, 227, 0.4);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 20px;
+}
+
+.header-left {
+  float: left;
+}
+.header-left img{
+  width:250px;
+  height:65px;
+}
+.header-left a{
+  height: 65px;
+}
+.header-left a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-left a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+  
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* menu-iconのCSSを貼り付けてください */
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  /* displayをnoneに指定してください */
+  display: none;
+}
+
+
+.lesson-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+  background-image:url(images/lesson_background.png);
+
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+.lesson-icon {
+  position: relative;
+  width:100%;
+}
+
+.bottles{
+  width: 75%;
+  height:100%;
+}
+.lesson-icon .bottles{
+  position: absolute;
+  left:3%;
+  bottom: 25%;
+}
+
+.lesson-icon p{
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.7),   /* 右下に黒い影 */
+    -2px -2px 4px rgba(0, 0, 0, 0.7), /* 左上に黒い影 */
+    2px -2px 4px rgba(0, 0, 0, 0.7),  /* 右上に黒い影 */
+    -2px 2px 4px rgba(0, 0, 0, 0.7);  /* 左下に黒い影 */
+  position: absolute;
+  right:10%;
+  top: 35%;
+  width: 100%;
+  color: white;
+
+}
+.parent{
+  border: 1px solid #000;
+  background-color: rgba(255, 255, 255, 0.6);
+
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  &:hover .toggle{
+    grid-template-rows: 1fr;
+  }
+  .btn:active .toggle {
+    grid-template-rows: 1fr;
+  }
+  &:active .toggle {
+    grid-template-rows: 1fr;
+  }
+
+
+  
+  h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .toggle{
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows .4s ease;
+
+    div{
+      overflow: hidden;
+    }
+  }
+}
+
+
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 13px;
+  color: black;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  box-shadow: 0 7px #1a7940;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+footer img {
+  width: 125px;
+}
+footer .iput{
+  float:right;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.password-popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	display: none; /* 初期状態で非表示 */
+	justify-content: center;
+	align-items: center;
+	color: white;
+	z-index: 1000;
+  }
+  
+  /* 入力フォームのスタイル */
+  .password-popup input {
+	padding: 10px;
+	font-size: 16px;
+	margin-right: 10px;
+  }
+  
+  .password-popup div {
+    display: flex;
+    flex-direction: column; /* 縦方向の配置 */
+    justify-content: center; /* 垂直方向の中央揃え */
+    align-items: center; /* 水平方向の中央揃え */
+    height: 100%; /* コンテナを全画面の高さに */
+    text-align: center; /* テキスト中央揃え */
+  }
+  
+  .password-popup button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px; /* ボタンの角を丸くする */
+    background-color: #007bff; /* ボタンの背景色 */
+    color: white; /* ボタン内の文字色 */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* ボタンに影を追加 */
+    transition: background-color 0.3s ease; /* 背景色のホバーアニメーション */
+    margin-bottom:50px;
+  }
+  
+  .password-popup button:hover {
+    background-color: #0056b3; /* ホバー時の背景色 */
+  }
+  .password-popup a{
+    margin:3px 10px;
+      display: inline-block; /* 横並びにする */
+      justify-content: center; /* 中央揃え */
+      gap: 20px; /* リンク間のスペース */
+  }
+
+  
