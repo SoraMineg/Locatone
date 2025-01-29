@@ -3,7 +3,7 @@ let isPopupShown = false; // ポップアップがすでに表示されている
 // スクロールイベントの設定
 window.addEventListener("scroll", () => {
   const scrollPosition = window.scrollY; // 現在のスクロール位置
-  const triggerPosition = 0; // ポップアップを表示するスクロール位置(px)
+  const triggerPosition = 1; // ポップアップを表示するスクロール位置(px)
 
   if (scrollPosition >= triggerPosition && !isPopupShown) {
     showPopup();
