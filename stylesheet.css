@@ -219,15 +219,14 @@ header {
   background-color: rgba(255, 255, 255, 0.6);
   padding: 1rem 1.5rem;
   border-radius: 1rem;
-  -webkit-tap-highlight-color: transparent;
-
-  &:hover .toggle,
-  &:focus-within .toggle,
-  &:active .toggle {
+  -webkit-tap-highlight-color: transparent; 
+  &:hover .toggle {
     grid-template-rows: 1fr;
   }
-
   .btn:active .toggle {
+    grid-template-rows: 1fr;
+  }
+  &:active .toggle {
     grid-template-rows: 1fr;
   }
 
@@ -235,7 +234,7 @@ header {
     font-size: 1.5rem;
     font-weight: 600;
   }
-
+  
   .toggle {
     display: grid;
     grid-template-rows: 0fr;
