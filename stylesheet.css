@@ -214,38 +214,39 @@ header {
   color: white;
 
 }
-.parent{
+.parent {
   border: 1px solid #000;
   background-color: rgba(255, 255, 255, 0.6);
-
   padding: 1rem 1.5rem;
   border-radius: 1rem;
-  &:hover .toggle{
-    grid-template-rows: 1fr;
-  }
-  .btn:active .toggle {
-    grid-template-rows: 1fr;
-  }
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover .toggle,
+  &:focus-within .toggle,
   &:active .toggle {
     grid-template-rows: 1fr;
   }
 
+  .btn:active .toggle {
+    grid-template-rows: 1fr;
+  }
 
-  
-  h2{
+  h2 {
     font-size: 1.5rem;
     font-weight: 600;
   }
-  .toggle{
+
+  .toggle {
     display: grid;
     grid-template-rows: 0fr;
-    transition: grid-template-rows .4s ease;
+    transition: grid-template-rows 0.4s ease;
 
-    div{
+    div {
       overflow: hidden;
     }
   }
 }
+
 
 
 .text-contents {
