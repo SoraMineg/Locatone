@@ -15,7 +15,7 @@ a {
   clear: left;
 }
 
-.container {
+.message-wrapper, .container {
   max-width: 1170px;
   width: 100%;
   padding: 0 15px;
