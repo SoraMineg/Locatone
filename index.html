@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="top_btn.css">
     <link rel="stylesheet" href="scroll.css">
     <link rel="stylesheet" href="app.css">
+    <script defer src="burger.js"></script>
     <link rel="stylesheet" href="xbtn.css">
   </head>
 
@@ -25,11 +26,19 @@
           
         </div>
         <!-- ここにスマートフォン用のメニューアイコンを追加してください -->
-        <span class="fa fa-bars menu-icon"></span>
+        <div class="menu-button" id="menu-button">
+          <i class="fa fa-bars"></i>
+        </div>
+          <nav class="menu" id="menu">
+            <ul>
+                <li><a href="#">前日譚</a></li>
+                <li><a href="second.html" class="login">🔒後日譚</a></li>
+            </ul>
+          </nav>
 
         <div class="header-right">
-          <a href="#">前日談</a>
-          <a href="second.html" class="login">🔒後日談</a>
+          <a href="#">前日譚</a>
+          <a href="second.html" class="login">🔒後日譚</a>
         </div>
       </div>
     </header>
@@ -60,7 +69,7 @@
             <!-- ポップアップ B -->
             <div id="popup-b" class="x-popup" data-type="b">
                 <button class="xbtn" onclick="window.location.href='https://x.com/locatonebysony?s=21&t=mV1ta0eCz8HTic4G0xI1rg'">Locatone公式</button>
-                <button class="xbtn" onclick="window.location.href='https://x.com/yellow_closet?s=21&t=mV1ta0eCz8HTic4G0xI1rg'">元怪盗の音返し公式</button>
+                <button class="xbtn" onclick="window.location.href='https://x.com/otogaeshi?s=11&t=mV1ta0eCz8HTic4G0xl1rg'">元怪盗の音返し公式</button>
             </div>
             <script src="xbtn.js"></script>
 
@@ -114,11 +123,11 @@
               
             </div>
             <div class="parent">
-              <h2>滝</h2>
+              <h2>バスケ</h2>
               <div class="toggle">
                 <div>
                   <img src="un" alt="">
-                  <p class="text-contents">滝を見ると落ち着く</p>
+                  <p class="text-contents">運動は大事</p>
                 </div>
               </div>
             </div>
@@ -128,16 +137,16 @@
               <img src="https://prog-8.com/images/html/advanced/ruby.png">
               <div class="btn">
                 <img class="bottles"src="images/red_bin-r.png" alt="">
-                <p><b>チビッコ広場</b></p>
+                <p><b>ちびっこ広場</b></p>
               </div>
               
             </div>
             <div class="parent">
-              <h2>滝</h2>
+              <h2>ちびっこ広場</h2>
               <div class="toggle">
                 <div>
                   <img src="un" alt="">
-                  <p class="text-contents">滝を見ると落ち着く</p>
+                  <p class="text-contents">ユニークな遊具がたくさん</p>
                 </div>
               </div>
             </div>
@@ -152,11 +161,11 @@
               </div>
             </div>
             <div class="parent">
-              <h2>滝</h2>
+              <h2>平和の鐘</h2>
               <div class="toggle">
                 <div>
                   <img src="un" alt="">
-                  <p class="text-contents">滝を見ると落ち着く</p>
+                  <p class="text-contents">綺麗な音色</p>
                 </div>
               </div>
             </div>
@@ -164,7 +173,6 @@
           </div>
           <div class="clear"></div>
         </div>
-      </div>
     </div>
     <div class="message-wrapper">
       <div class="container">
