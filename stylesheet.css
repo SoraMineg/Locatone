@@ -266,6 +266,7 @@ header {
 .message-wrapper {
   border-bottom: 1px solid #eee;
   padding-bottom: 80px;
+  padding-top:100px;
   text-align: center;
 }
 
