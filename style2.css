@@ -169,16 +169,34 @@
   .heading h3 {
     font-weight: normal;
   }
+  .sequel h2{
+    color:white;
+    text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.7),   /* 右下に黒い影 */
+    -2px 2px 4px rgba(0, 0, 0, 0.7);  /* 左下に黒い影 */
+  }
+  .sequel{
+    background-color:rgba(255, 255, 204, 0.7);
+    border-radius: 60px;
+  }
   
   .message-wrapper {
     border-bottom: 1px solid #eee;
     padding-bottom: 80px;
   }
+  .message-wrapper p{
+    color:rgb(74, 75, 75);
+  }
   .message-wrapper .heading{
     text-align:center;
+    border-bottom: 1px solid #eee;
   }
   .message.sequel{
     border:1px solid #1a7940;
+  }
+  .message-wrapper p{
+    padding-left: 130px;
+    padding-right:150px;
   }
   
   .message {
