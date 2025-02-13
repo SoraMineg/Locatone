@@ -1,0 +1,30 @@
+.appbtn {
+  background: linear-gradient(135deg, #3a21b4, #0ba8eb);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(255, 120, 150, 0.3);
+}
+
+.appbtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 120, 150, 0.5);
+}
+
+.appbtn:active {
+  transform: scale(0.98);
+}
+
+.popup .appbtn {
+  width: 80%;
+  background: linear-gradient(135deg, #2602de, #79e4ea);
+}
+
+.popup .appbtn:hover {
+  box-shadow: 0 6px 15px rgba(0, 242, 254, 0.5);
+}
