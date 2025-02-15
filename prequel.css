@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "acgyosyo";
+  src: url("./acgyosyo.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  }
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+  header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(129, 96, 227, 0.4);
+    position :fixed;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .logo {
+    width: 124px;
+    margin-top: 20px;
+  }
+  
+  .header-left {
+    float: left;
+  }
+  .header-left img{
+    width:250px;
+    height:65px;
+  }
+  .header-left a{
+    height: 65px;
+  }
+  .header-left a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+  }
+  
+  .header-left a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .header-right {
+    float: right;
+    margin-right: -25px;
+    
+  }
+  
+  .header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+  }
+  .menu-button, .menu {
+    display: none;
+  }
+  
+  .header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* menu-iconのCSSを貼り付けてください */
+  .menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    /* displayをnoneに指定してください */
+    display: none;
+  }
+
+  
+  .prequel{
+    background-color:rgba(255, 255, 204, 0.7);
+    margin:10% 10%;
+    /**margin:100px 180px 0px 170px;**/
+  }
+  .prequel{
+    background-color:rgba(255, 255, 204, 0.7);
+    border-radius: 60px;
+    font-family:acgyosyo;
+    
+  }
+  .prequel h2{
+    color:white;
+    text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.7),   /* 右下に黒い影 */
+    -2px 2px 4px rgba(0, 0, 0, 0.7);  /* 左下に黒い影 */
+  }
+ .prequel p {
+    font-family:acgyosyo;
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 204, 0);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wrap {
+	width: 90%;
+	margin: 0 auto;
+  
+  }
+  
+  .wrap-flex {
+	padding: 48px 12px;
+	margin-bottom: 32px;
+  justify-content: space-around;
+  }
+  
+  /* å…±é€šè£…é£¾ */
+  .common {
+	cursor: pointer;
+	transition: all .3s;
+  }
+  
+  .common:first-child {
+    margin-right: 1em;
+  }
+  
+  /* divã‚¿ã‚° */
+  .div {
+	border: none;
+	border-radius: 4px;
+  }
+  
+  .div-hover:hover,
+  .div-active:active {
+    background-image: linear-gradient(#f8aea1 0%, #f5f856 100%);
+	
+	transform: translateY(-8px);
+  transform: scale(1.2);
+  box-shadow: 0 10px 20px rgba(239, 239, 125);
+  }
+.image{
+  text-align:center;
+
+  
+}
+.image img{
+  width:30%;
+}
+footer {
+  border-top: 1px solid #eee;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  
+}
+
+footer img {
+
+  float:left;
+  width:200px;
+}
+footer .iput{
+  float:right;
+  width:200px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+
